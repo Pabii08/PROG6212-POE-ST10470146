@@ -1,0 +1,52 @@
+name: CI - Validate Repository Structure
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  validate-docs:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Check required files exist
+      run: |
+        echo "Checking for required files..."
+        
+        if [ ! -f "README.md" ]; then
+          echo "❌ README.md is missing!"
+          exit 1
+        fi
+        echo "✅ README.md found"
+        
+        if [ ! -d "docs" ]; then
+          echo "❌ docs folder is missing!"
+          exit 1
+        fi
+        echo "✅ docs folder found"
+        
+        if [ ! -f "docs/ERD.png" ] && [ ! -f "docs/ERD.pdf" ]; then
+          echo "❌ ERD.png or ERD.pdf is missing in docs folder!"
+          exit 1
+        fi
+        echo "✅ ERD file found"
+        
+        if [ ! -f "docs/API_Endpoint_Plan.md" ] && [ ! -f "docs/API_Endpoint_Plan.pdf" ]; then
+          echo "❌ API_Endpoint_Plan.md or .pdf is missing in docs folder!"
+          exit 1
+        fi
+        echo "✅ API Endpoint Plan found"
+        
+        if [ ! -f "docs/RaceDay_Schema_Seed.sql" ]; then
+          echo "❌ RaceDay_Schema_Seed.sql is missing in docs folder!"
+          exit 1
+        fi
+        echo "✅ SQL Script found"
+        
+        echo "🎉 All required files are present!"
