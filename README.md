@@ -25,7 +25,7 @@ South Africa has a rich road events culture, from the iconic Comrades Marathon b
 ![CI/CD Build Status](docs/build-success.pdf)
 
 ## Video Presentation
-[Watch the video presentation](https://www.youtube.com/watch?v=your-video-id)
+[Watch the video presentation](https://youtu.be/KqxWvknWC4c?si=BOLVHTYm2c9sinkX)
 
 ## Setup Instructions
 
