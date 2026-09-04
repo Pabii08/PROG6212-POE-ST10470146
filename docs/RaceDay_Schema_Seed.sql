@@ -41,6 +41,28 @@ South Africa has a rich road events culture, from the iconic Comrades Marathon b
 3. Verify that all tables are created successfully
 4. Check that sample data is inserted
 
+-- ============================================
+-- VERIFY SAMPLE DATA (Uncomment to test)
+-- ============================================
+-- SELECT * FROM [User];
+-- SELECT * FROM [Event];
+-- SELECT * FROM Category;
+-- SELECT * FROM Enrolment;
+-- SELECT * FROM [Result];
+-- SELECT * FROM WeatherInfo;
+-- GO
+
+-- ============================================
+-- VERIFY TABLE STRUCTURE
+-- ============================================
+-- EXEC sp_columns [User];
+-- EXEC sp_columns [Event];
+-- EXEC sp_columns Category;
+-- EXEC sp_columns Enrolment;
+-- EXEC sp_columns [Result];
+-- EXEC sp_columns WeatherInfo;
+-- GO
+
 ### Clone the Repository
 ```bash
 git clone https://github.com/Pabii08/PROG6212-POE-ST10470146.git
