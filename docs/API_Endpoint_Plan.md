@@ -1,5 +1,14 @@
 # RaceDay API Endpoint Plan
 
+## Overview
+This document outlines all RESTful API endpoints for the RaceDay system.
+
+## Base URL
+All endpoints are prefixed with: `/api`
+
+---
+# RaceDay API Endpoint Plan
+
 ## Authentication & User Profile
 
 | HTTP Method | Route | Description | Role Required | Request Body | Expected Response |
