@@ -1,0 +1,23 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Explicitly declare text files
+*.cs text diff=csharp
+*.sql text
+*.md text
+*.yml text
+*.yaml text
+*.json text
+*.xml text
+
+# Declare files that will always have CRLF
+*.bat text eol=crlf
+
+# Declare files that will always have LF
+*.sh text eol=lf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.pdf binary
+*.zip binary
