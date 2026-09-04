@@ -1,20 +1,22 @@
-# TODO List for Part 1
+# TODO List - RaceDay Project
 
-## Completed
-- [x] Design ERD with 6 entities
-- [x] Create API endpoint plan
-- [x] Write SQL schema script
-- [x] Add sample data
-- [x] Configure CI/CD workflow
-- [x] Create README documentation
+## Part 1 - Complete ✅
+- [x] ERD with 6 entities
+- [x] API Endpoint Plan
+- [x] SQL Schema and Seed Data
+- [x] CI/CD Workflow
+- [x] 20+ Commits
+- [x] YouTube Video
 
-## Pending for Part 2
+## Part 2 - Pending
 - [ ] Build RESTful API in C#
-- [ ] Implement JWT authentication
-- [ ] Write unit tests
-- [ ] Connect to database
+- [ ] Implement JWT Authentication
+- [ ] Write Unit Tests
+- [ ] Connect to Database
+- [ ] Update CI/CD for API
 
-## Pending for Part 3
-- [ ] Build MVC web application
+## Part 3 - Pending
+- [ ] Build MVC Web Application
 - [ ] Integrate Azure Blob Storage
 - [ ] Containerize with Docker
+- [ ] Deploy to Azure
